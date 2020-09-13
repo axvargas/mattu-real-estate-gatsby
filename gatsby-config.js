@@ -21,7 +21,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
-        contentTypes: [`properties`, `pages`, `categories`],
+        contentTypes: [`properties`, `pages`, `categories`, `agents`],
       },
     },
     {
