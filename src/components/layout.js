@@ -6,7 +6,6 @@ const Layout = ({ children }) => {
 
 	return (
 		<>
-
 			<Global
 				styles={css`
 					html{

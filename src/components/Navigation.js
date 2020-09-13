@@ -18,12 +18,24 @@ const NavLink = styled(Link)`
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     padding: .5rem;
-    margin-right: 1rem;
-    &:last-of-type{
-        margin-right:0
-    }
+    margin-right: 1rem; 
     &.actual-page{
         border-bottom: 2px solid #FFF;
+    }
+    
+    @media (min-width: 768px){
+        color: #FFF;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        padding: .5rem;
+        margin-right: 1rem;
+        &:last-of-type{
+            margin-right:0
+        }
+        &.actual-page{
+            border-bottom: 2px solid #FFF;
+        }
     }
 `
 const Navigation = () => {
