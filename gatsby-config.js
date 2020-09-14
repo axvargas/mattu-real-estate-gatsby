@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://strapi-real-estate-backend.herokuapp.com`,
+        apiURL: process.env.DEPLOY_URL ? `https://strapi-real-estate-backend.herokuapp.com` : `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`properties`, `pages`, `categories`, `agents`],
       },
