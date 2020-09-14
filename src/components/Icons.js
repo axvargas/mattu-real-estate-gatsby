@@ -19,29 +19,14 @@ const ListOfIcons = styled.ul`
 const Icons = ({ rooms, wc, parking }) => {
     const { roomEdge, wcEdge, parkingEdge } = useStaticQuery(graphql`
         query {
-            roomEdge: allFile(filter: { relativeDirectory: { eq: "icons" }, id: { eq: "b976a6f5-8cf8-5f0d-832b-8dfd8f2451ba" } }) {
-                edges {
-                    node {
-                        id
-                        publicURL
-                    }
-                }
+            roomEdge: file(relativePath: { eq: "icons/icono_dormitorio.svg" }) {
+                publicURL
             }
-            wcEdge: allFile(filter: { relativeDirectory: { eq: "icons" }, id: { eq: "ed0b3cb9-3cfd-545a-b68e-e5508bcde57e" } }) {
-                edges {
-                    node {
-                        id
-                        publicURL
-                    }
-                }
+            wcEdge: file(relativePath: { eq: "icons/icono_wc.svg" }) {
+                publicURL
             }
-            parkingEdge: allFile(filter: { relativeDirectory: { eq: "icons" }, id: { eq: "15b85562-6124-597a-b1c6-ff8764d42e2d" } }) {
-                edges {
-                    node {
-                        id
-                        publicURL
-                    }
-                }
+            parkingEdge: file(relativePath: { eq: "icons/icono_estacionamiento.svg" }) {
+                publicURL
             }
         }
     `)
@@ -49,7 +34,7 @@ const Icons = ({ rooms, wc, parking }) => {
     const [roomIcon,
         wcIcon,
         parkingIcon
-    ] = [roomEdge.edges[0].node.publicURL, wcEdge.edges[0].node.publicURL, parkingEdge.edges[0].node.publicURL];
+    ] = [roomEdge.publicURL, wcEdge.publicURL, parkingEdge.publicURL];
 
     return (
         <ListOfIcons>
