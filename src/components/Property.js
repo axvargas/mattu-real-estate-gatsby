@@ -3,7 +3,7 @@ import Icons from './Icons'
 import styled from '@emotion/styled'
 import Image from 'gatsby-image'
 import { graphql } from 'gatsby'
-import Layout from './Layout'
+import Layout from './Layout.js'
 
 const Content = styled.div`
     max-width: 1200px;

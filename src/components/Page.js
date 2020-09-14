@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import Image from 'gatsby-image'
 import { graphql } from 'gatsby'
-import Layout from './Layout'
+import Layout from './Layout.js'
 import ListOfProperties from './ListOfProperties'
 
 const ContentPage = styled.div`

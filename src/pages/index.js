@@ -1,12 +1,13 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import useHome from '../hooks/useHome'
-import BackgroundImage from 'gatsby-background-image'
-import ListOfProperties from '../components/ListOfProperties'
-import Banner from '../components/Banner'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
+import BackgroundImage from 'gatsby-background-image'
+import useHome from '../hooks/useHome'
+import ListOfProperties from '../components/ListOfProperties'
+import Banner from '../components/Banner'
+import Layout from '../components/Layout'
 import heroCSS from '../css/hero.module.css'
+
 const BackgroundImageStyled = styled(BackgroundImage)`
 	height: 600px;
 `
